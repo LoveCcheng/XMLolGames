@@ -16,6 +16,7 @@
 		FC8B67D41E0BB4740027B63F /* XMLolGamesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67D31E0BB4740027B63F /* XMLolGamesUITests.m */; };
 		FC8B67EC1E0BB5D30027B63F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67E91E0BB5D30027B63F /* AppDelegate.m */; };
 		FC8B67ED1E0BB5D30027B63F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67EB1E0BB5D30027B63F /* ViewController.m */; };
+		FC8B67EF1E0BBA940027B63F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67EE1E0BBA940027B63F /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FC8B67E91E0BB5D30027B63F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FC8B67EA1E0BB5D30027B63F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FC8B67EB1E0BB5D30027B63F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC8B67EE1E0BBA940027B63F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				FC8B67BA1E0BB4730027B63F /* Assets.xcassets */,
 				FC8B67BC1E0BB4730027B63F /* LaunchScreen.storyboard */,
 				FC8B67BF1E0BB4730027B63F /* Info.plist */,
+				FC8B67EE1E0BBA940027B63F /* Images.xcassets */,
 				FC8B67AE1E0BB4730027B63F /* Supporting Files */,
 			);
 			path = XMLolGames;
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8B67BE1E0BB4730027B63F /* LaunchScreen.storyboard in Resources */,
+				FC8B67EF1E0BBA940027B63F /* Images.xcassets in Resources */,
 				FC8B67BB1E0BB4730027B63F /* Assets.xcassets in Resources */,
 				FC8B67B91E0BB4730027B63F /* Main.storyboard in Resources */,
 			);
@@ -556,6 +560,7 @@
 			baseConfigurationReference = 3D48D1E3D56BF8D44A4D202B /* Pods-XMLolGames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = XMLolGames/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -569,6 +574,7 @@
 			baseConfigurationReference = 0CFFBD17452D4CD3F89CDD37 /* Pods-XMLolGames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = XMLolGames/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -642,6 +648,7 @@
 				FC8B67DA1E0BB4740027B63F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC8B67DB1E0BB4740027B63F /* Build configuration list for PBXNativeTarget "XMLolGamesTests" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +657,7 @@
 				FC8B67DD1E0BB4740027B63F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC8B67DE1E0BB4740027B63F /* Build configuration list for PBXNativeTarget "XMLolGamesUITests" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +666,7 @@
 				FC8B67E01E0BB4740027B63F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
