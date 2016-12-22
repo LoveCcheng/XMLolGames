@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E35C02A9B961C7594C1C622 /* libPods-XMLolGames.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */; };
 		FC8B67B01E0BB4730027B63F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67AF1E0BB4730027B63F /* main.m */; };
 		FC8B67B91E0BB4730027B63F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67B71E0BB4730027B63F /* Main.storyboard */; };
 		FC8B67BB1E0BB4730027B63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67BA1E0BB4730027B63F /* Assets.xcassets */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CFFBD17452D4CD3F89CDD37 /* Pods-XMLolGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLolGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames.release.xcconfig"; sourceTree = "<group>"; };
+		1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XMLolGames.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D48D1E3D56BF8D44A4D202B /* Pods-XMLolGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLolGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames.debug.xcconfig"; sourceTree = "<group>"; };
 		FC8B67AB1E0BB4730027B63F /* XMLolGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLolGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8B67AF1E0BB4730027B63F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC8B67B81E0BB4730027B63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E35C02A9B961C7594C1C622 /* libPods-XMLolGames.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160C74F6C20796C4F6833C9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D48D1E3D56BF8D44A4D202B /* Pods-XMLolGames.debug.xcconfig */,
+				0CFFBD17452D4CD3F89CDD37 /* Pods-XMLolGames.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		318A5FE2C8F1672BA0028A84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC8B67A21E0BB4730027B63F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				FC8B67C71E0BB4730027B63F /* XMLolGamesTests */,
 				FC8B67D21E0BB4740027B63F /* XMLolGamesUITests */,
 				FC8B67AC1E0BB4730027B63F /* Products */,
+				160C74F6C20796C4F6833C9F /* Pods */,
+				318A5FE2C8F1672BA0028A84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC8B67D81E0BB4740027B63F /* Build configuration list for PBXNativeTarget "XMLolGames" */;
 			buildPhases = (
+				58AC30CE51BD461B5C91DE57 /* [CP] Check Pods Manifest.lock */,
 				FC8B67A71E0BB4730027B63F /* Sources */,
 				FC8B67A81E0BB4730027B63F /* Frameworks */,
 				FC8B67A91E0BB4730027B63F /* Resources */,
+				EADD2267C9B0678071DAC527 /* [CP] Embed Pods Frameworks */,
+				0343622251FDEC67B5D0CBC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,6 +350,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0343622251FDEC67B5D0CBC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58AC30CE51BD461B5C91DE57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EADD2267C9B0678071DAC527 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC8B67A71E0BB4730027B63F /* Sources */ = {
@@ -478,6 +553,7 @@
 		};
 		FC8B67D91E0BB4740027B63F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D48D1E3D56BF8D44A4D202B /* Pods-XMLolGames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XMLolGames/Info.plist;
@@ -490,6 +566,7 @@
 		};
 		FC8B67DA1E0BB4740027B63F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CFFBD17452D4CD3F89CDD37 /* Pods-XMLolGames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XMLolGames/Info.plist;
