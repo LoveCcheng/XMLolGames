@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 
+#import "XMSideViewController.h"
+#import "XMLeftViewController.h"
+#import "XMMainViewController.h"
+#import "XMTabbarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,16 +21,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    XMLeftViewController *leftVC = [[XMLeftViewController alloc]init];
+    XMTabbarController *tababr = [[XMTabbarController alloc]init];
+    XMSideViewController *sideVC = [XMSideViewController SideViewControllerWithLeftController:leftVC andMainController:tababr];
+    [self setStatusStyle];
+    self.window.rootViewController = sideVC;
     return YES;
 }
-
+/** 设置状态栏颜色 */
+-(void)setStatusStyle{
+    //需要在info.plist文件里面设置 View controller-based status bar appearance    为NO
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
-
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.

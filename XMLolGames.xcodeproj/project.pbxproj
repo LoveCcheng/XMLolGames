@@ -8,15 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2E35C02A9B961C7594C1C622 /* libPods-XMLolGames.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */; };
+		FC86A3721E0CBEB500467072 /* XMNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86A3711E0CBEB500467072 /* XMNavViewController.m */; };
+		FC86A3741E0CCC7E00467072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC86A3731E0CCC7E00467072 /* Assets.xcassets */; };
+		FC86A3781E0D0EF700467072 /* XMRegiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86A3761E0D0EF700467072 /* XMRegiViewController.m */; };
+		FC86A3791E0D0EF700467072 /* XMRegiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC86A3771E0D0EF700467072 /* XMRegiViewController.xib */; };
 		FC8B67B01E0BB4730027B63F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67AF1E0BB4730027B63F /* main.m */; };
 		FC8B67B91E0BB4730027B63F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67B71E0BB4730027B63F /* Main.storyboard */; };
-		FC8B67BB1E0BB4730027B63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67BA1E0BB4730027B63F /* Assets.xcassets */; };
 		FC8B67BE1E0BB4730027B63F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67BC1E0BB4730027B63F /* LaunchScreen.storyboard */; };
 		FC8B67C91E0BB4730027B63F /* XMLolGamesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67C81E0BB4730027B63F /* XMLolGamesTests.m */; };
 		FC8B67D41E0BB4740027B63F /* XMLolGamesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67D31E0BB4740027B63F /* XMLolGamesUITests.m */; };
 		FC8B67EC1E0BB5D30027B63F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67E91E0BB5D30027B63F /* AppDelegate.m */; };
 		FC8B67ED1E0BB5D30027B63F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67EB1E0BB5D30027B63F /* ViewController.m */; };
 		FC8B67EF1E0BBA940027B63F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67EE1E0BBA940027B63F /* Images.xcassets */; };
+		FC8B67F61E0BC3950027B63F /* XMSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67F51E0BC3950027B63F /* XMSideViewController.m */; };
+		FC8B67F91E0BC4E00027B63F /* UIView+XMframe.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67F81E0BC4E00027B63F /* UIView+XMframe.m */; };
+		FC8B68011E0BCE7D0027B63F /* XMLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68001E0BCE7D0027B63F /* XMLeftViewController.m */; };
+		FC8B68041E0BCE870027B63F /* XMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68031E0BCE870027B63F /* XMMainViewController.m */; };
+		FC8B68071E0BD14C0027B63F /* XMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68061E0BD14C0027B63F /* XMTabbarController.m */; };
+		FC8B68191E0BD3BC0027B63F /* XMMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68181E0BD3BC0027B63F /* XMMessageViewController.m */; };
+		FC8B681C1E0BD3CD0027B63F /* XMHeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B681B1E0BD3CD0027B63F /* XMHeroViewController.m */; };
+		FC8B681F1E0BD3E80027B63F /* XMCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B681E1E0BD3E80027B63F /* XMCommunityViewController.m */; };
+		FC8B68221E0BD3F50027B63F /* XMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68211E0BD3F50027B63F /* XMMoreViewController.m */; };
+		FC8B68251E0BD4010027B63F /* XMVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68241E0BD4010027B63F /* XMVideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +53,15 @@
 		0CFFBD17452D4CD3F89CDD37 /* Pods-XMLolGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLolGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames.release.xcconfig"; sourceTree = "<group>"; };
 		1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XMLolGames.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D48D1E3D56BF8D44A4D202B /* Pods-XMLolGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLolGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames.debug.xcconfig"; sourceTree = "<group>"; };
+		FC86A3701E0CBEB500467072 /* XMNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNavViewController.h; sourceTree = "<group>"; };
+		FC86A3711E0CBEB500467072 /* XMNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNavViewController.m; sourceTree = "<group>"; };
+		FC86A3731E0CCC7E00467072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC86A3751E0D0EF700467072 /* XMRegiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRegiViewController.h; sourceTree = "<group>"; };
+		FC86A3761E0D0EF700467072 /* XMRegiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRegiViewController.m; sourceTree = "<group>"; };
+		FC86A3771E0D0EF700467072 /* XMRegiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMRegiViewController.xib; sourceTree = "<group>"; };
 		FC8B67AB1E0BB4730027B63F /* XMLolGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLolGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8B67AF1E0BB4730027B63F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC8B67B81E0BB4730027B63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC8B67BA1E0BB4730027B63F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC8B67BD1E0BB4730027B63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8B67BF1E0BB4730027B63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC8B67C41E0BB4730027B63F /* XMLolGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMLolGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +75,27 @@
 		FC8B67EA1E0BB5D30027B63F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FC8B67EB1E0BB5D30027B63F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FC8B67EE1E0BBA940027B63F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC8B67F41E0BC3950027B63F /* XMSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSideViewController.h; sourceTree = "<group>"; };
+		FC8B67F51E0BC3950027B63F /* XMSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSideViewController.m; sourceTree = "<group>"; };
+		FC8B67F71E0BC4E00027B63F /* UIView+XMframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMframe.h"; sourceTree = "<group>"; };
+		FC8B67F81E0BC4E00027B63F /* UIView+XMframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMframe.m"; sourceTree = "<group>"; };
+		FC8B67FA1E0BC5110027B63F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FC8B67FF1E0BCE7D0027B63F /* XMLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLeftViewController.h; sourceTree = "<group>"; };
+		FC8B68001E0BCE7D0027B63F /* XMLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLeftViewController.m; sourceTree = "<group>"; };
+		FC8B68021E0BCE870027B63F /* XMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMainViewController.h; sourceTree = "<group>"; };
+		FC8B68031E0BCE870027B63F /* XMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMainViewController.m; sourceTree = "<group>"; };
+		FC8B68051E0BD14C0027B63F /* XMTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTabbarController.h; sourceTree = "<group>"; };
+		FC8B68061E0BD14C0027B63F /* XMTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTabbarController.m; sourceTree = "<group>"; };
+		FC8B68171E0BD3BC0027B63F /* XMMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMessageViewController.h; sourceTree = "<group>"; };
+		FC8B68181E0BD3BC0027B63F /* XMMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMessageViewController.m; sourceTree = "<group>"; };
+		FC8B681A1E0BD3CD0027B63F /* XMHeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHeroViewController.h; sourceTree = "<group>"; };
+		FC8B681B1E0BD3CD0027B63F /* XMHeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHeroViewController.m; sourceTree = "<group>"; };
+		FC8B681D1E0BD3E80027B63F /* XMCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCommunityViewController.h; sourceTree = "<group>"; };
+		FC8B681E1E0BD3E80027B63F /* XMCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCommunityViewController.m; sourceTree = "<group>"; };
+		FC8B68201E0BD3F50027B63F /* XMMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMoreViewController.h; sourceTree = "<group>"; };
+		FC8B68211E0BD3F50027B63F /* XMMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMoreViewController.m; sourceTree = "<group>"; };
+		FC8B68231E0BD4010027B63F /* XMVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMVideoViewController.h; sourceTree = "<group>"; };
+		FC8B68241E0BD4010027B63F /* XMVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMVideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +166,7 @@
 		FC8B67AD1E0BB4730027B63F /* XMLolGames */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B67F01E0BC2FA0027B63F /* TabbarController */,
 				FC8B67E71E0BB5D30027B63F /* Appdelegate */,
 				FC8B67E11E0BB5CD0027B63F /* Community(four) */,
 				FC8B67E21E0BB5CD0027B63F /* Hero(three) */,
@@ -135,9 +175,9 @@
 				FC8B67E51E0BB5CD0027B63F /* ToolClass */,
 				FC8B67E61E0BB5CD0027B63F /* Video(two) */,
 				FC8B67B71E0BB4730027B63F /* Main.storyboard */,
-				FC8B67BA1E0BB4730027B63F /* Assets.xcassets */,
 				FC8B67BC1E0BB4730027B63F /* LaunchScreen.storyboard */,
 				FC8B67BF1E0BB4730027B63F /* Info.plist */,
+				FC86A3731E0CCC7E00467072 /* Assets.xcassets */,
 				FC8B67EE1E0BBA940027B63F /* Images.xcassets */,
 				FC8B67AE1E0BB4730027B63F /* Supporting Files */,
 			);
@@ -173,6 +213,9 @@
 		FC8B67E11E0BB5CD0027B63F /* Community(four) */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B68111E0BD3840027B63F /* controller */,
+				FC8B68121E0BD3840027B63F /* Model */,
+				FC8B68131E0BD3840027B63F /* View */,
 			);
 			path = "Community(four)";
 			sourceTree = "<group>";
@@ -180,6 +223,9 @@
 		FC8B67E21E0BB5CD0027B63F /* Hero(three) */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B680E1E0BD37D0027B63F /* controller */,
+				FC8B680F1E0BD37D0027B63F /* Model */,
+				FC8B68101E0BD37D0027B63F /* View */,
 			);
 			path = "Hero(three)";
 			sourceTree = "<group>";
@@ -187,6 +233,9 @@
 		FC8B67E31E0BB5CD0027B63F /* Message(one) */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B68081E0BD3670027B63F /* controller */,
+				FC8B68091E0BD3670027B63F /* Model */,
+				FC8B680A1E0BD3670027B63F /* View */,
 			);
 			path = "Message(one)";
 			sourceTree = "<group>";
@@ -194,6 +243,9 @@
 		FC8B67E41E0BB5CD0027B63F /* More(five) */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B68141E0BD38B0027B63F /* controller */,
+				FC8B68151E0BD38B0027B63F /* Model */,
+				FC8B68161E0BD38B0027B63F /* View */,
 			);
 			path = "More(five)";
 			sourceTree = "<group>";
@@ -201,6 +253,9 @@
 		FC8B67E51E0BB5CD0027B63F /* ToolClass */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B67F71E0BC4E00027B63F /* UIView+XMframe.h */,
+				FC8B67F81E0BC4E00027B63F /* UIView+XMframe.m */,
+				FC8B67FA1E0BC5110027B63F /* PrefixHeader.pch */,
 			);
 			path = ToolClass;
 			sourceTree = "<group>";
@@ -208,6 +263,9 @@
 		FC8B67E61E0BB5CD0027B63F /* Video(two) */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B680B1E0BD3740027B63F /* controller */,
+				FC8B680C1E0BD3740027B63F /* Model */,
+				FC8B680D1E0BD3740027B63F /* View */,
 			);
 			path = "Video(two)";
 			sourceTree = "<group>";
@@ -221,6 +279,157 @@
 				FC8B67EB1E0BB5D30027B63F /* ViewController.m */,
 			);
 			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		FC8B67F01E0BC2FA0027B63F /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B67F21E0BC3510027B63F /* SideViewController */,
+				FC8B67F31E0BC3510027B63F /* TabbarCon */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		FC8B67F21E0BC3510027B63F /* SideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B67F41E0BC3950027B63F /* XMSideViewController.h */,
+				FC8B67F51E0BC3950027B63F /* XMSideViewController.m */,
+			);
+			path = SideViewController;
+			sourceTree = "<group>";
+		};
+		FC8B67F31E0BC3510027B63F /* TabbarCon */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B67FF1E0BCE7D0027B63F /* XMLeftViewController.h */,
+				FC8B68001E0BCE7D0027B63F /* XMLeftViewController.m */,
+				FC8B68021E0BCE870027B63F /* XMMainViewController.h */,
+				FC8B68031E0BCE870027B63F /* XMMainViewController.m */,
+				FC8B68051E0BD14C0027B63F /* XMTabbarController.h */,
+				FC8B68061E0BD14C0027B63F /* XMTabbarController.m */,
+				FC86A3701E0CBEB500467072 /* XMNavViewController.h */,
+				FC86A3711E0CBEB500467072 /* XMNavViewController.m */,
+				FC86A3751E0D0EF700467072 /* XMRegiViewController.h */,
+				FC86A3761E0D0EF700467072 /* XMRegiViewController.m */,
+				FC86A3771E0D0EF700467072 /* XMRegiViewController.xib */,
+			);
+			path = TabbarCon;
+			sourceTree = "<group>";
+		};
+		FC8B68081E0BD3670027B63F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B68171E0BD3BC0027B63F /* XMMessageViewController.h */,
+				FC8B68181E0BD3BC0027B63F /* XMMessageViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FC8B68091E0BD3670027B63F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC8B680A1E0BD3670027B63F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC8B680B1E0BD3740027B63F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B68231E0BD4010027B63F /* XMVideoViewController.h */,
+				FC8B68241E0BD4010027B63F /* XMVideoViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FC8B680C1E0BD3740027B63F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC8B680D1E0BD3740027B63F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC8B680E1E0BD37D0027B63F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B681A1E0BD3CD0027B63F /* XMHeroViewController.h */,
+				FC8B681B1E0BD3CD0027B63F /* XMHeroViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FC8B680F1E0BD37D0027B63F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC8B68101E0BD37D0027B63F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC8B68111E0BD3840027B63F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B681D1E0BD3E80027B63F /* XMCommunityViewController.h */,
+				FC8B681E1E0BD3E80027B63F /* XMCommunityViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FC8B68121E0BD3840027B63F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC8B68131E0BD3840027B63F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC8B68141E0BD38B0027B63F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B68201E0BD3F50027B63F /* XMMoreViewController.h */,
+				FC8B68211E0BD3F50027B63F /* XMMoreViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FC8B68151E0BD38B0027B63F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC8B68161E0BD38B0027B63F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +497,7 @@
 		FC8B67A31E0BB4730027B63F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XM;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = montnets;
 				TargetAttributes = {
@@ -334,7 +544,8 @@
 			files = (
 				FC8B67BE1E0BB4730027B63F /* LaunchScreen.storyboard in Resources */,
 				FC8B67EF1E0BBA940027B63F /* Images.xcassets in Resources */,
-				FC8B67BB1E0BB4730027B63F /* Assets.xcassets in Resources */,
+				FC86A3741E0CCC7E00467072 /* Assets.xcassets in Resources */,
+				FC86A3791E0D0EF700467072 /* XMRegiViewController.xib in Resources */,
 				FC8B67B91E0BB4730027B63F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,9 +619,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8B67F91E0BC4E00027B63F /* UIView+XMframe.m in Sources */,
+				FC8B68071E0BD14C0027B63F /* XMTabbarController.m in Sources */,
+				FC8B68251E0BD4010027B63F /* XMVideoViewController.m in Sources */,
+				FC8B68041E0BCE870027B63F /* XMMainViewController.m in Sources */,
 				FC8B67ED1E0BB5D30027B63F /* ViewController.m in Sources */,
+				FC86A3781E0D0EF700467072 /* XMRegiViewController.m in Sources */,
 				FC8B67EC1E0BB5D30027B63F /* AppDelegate.m in Sources */,
+				FC8B67F61E0BC3950027B63F /* XMSideViewController.m in Sources */,
+				FC8B681F1E0BD3E80027B63F /* XMCommunityViewController.m in Sources */,
+				FC8B68191E0BD3BC0027B63F /* XMMessageViewController.m in Sources */,
+				FC8B68221E0BD3F50027B63F /* XMMoreViewController.m in Sources */,
 				FC8B67B01E0BB4730027B63F /* main.m in Sources */,
+				FC86A3721E0CBEB500467072 /* XMNavViewController.m in Sources */,
+				FC8B68011E0BCE7D0027B63F /* XMLeftViewController.m in Sources */,
+				FC8B681C1E0BD3CD0027B63F /* XMHeroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +784,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XMLolGames/ToolClass/PrefixHeader.pch";
 				INFOPLIST_FILE = XMLolGames/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -575,6 +799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XMLolGames/ToolClass/PrefixHeader.pch";
 				INFOPLIST_FILE = XMLolGames/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
