@@ -7,6 +7,7 @@
 //
 
 #import "XMRegiViewController.h"
+#import "XMHttpOperation.h"
 
 @interface XMRegiViewController ()
 
@@ -35,12 +36,11 @@
     if (self.Username.text.length!=0 && self.password.text.length != 0) {
         XMLog(@"--用户名%@,--密码%@",self.Username.text,self.password.text);
         
+        [XMHttpOperation RegisterWithUsername:self.Username.text Password:self.password.text];
     }else{
         XMLog(@" --- 请输入用户名或密码");
     }
 }
-
-
 
 
 

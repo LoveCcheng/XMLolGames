@@ -12,6 +12,7 @@
 		FC86A3741E0CCC7E00467072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC86A3731E0CCC7E00467072 /* Assets.xcassets */; };
 		FC86A3781E0D0EF700467072 /* XMRegiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86A3761E0D0EF700467072 /* XMRegiViewController.m */; };
 		FC86A3791E0D0EF700467072 /* XMRegiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC86A3771E0D0EF700467072 /* XMRegiViewController.xib */; };
+		FC8B65131E120B970012033D /* XMHttpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B65121E120B970012033D /* XMHttpOperation.m */; };
 		FC8B67B01E0BB4730027B63F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67AF1E0BB4730027B63F /* main.m */; };
 		FC8B67B91E0BB4730027B63F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67B71E0BB4730027B63F /* Main.storyboard */; };
 		FC8B67BE1E0BB4730027B63F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67BC1E0BB4730027B63F /* LaunchScreen.storyboard */; };
@@ -30,6 +31,7 @@
 		FC8B681F1E0BD3E80027B63F /* XMCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B681E1E0BD3E80027B63F /* XMCommunityViewController.m */; };
 		FC8B68221E0BD3F50027B63F /* XMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68211E0BD3F50027B63F /* XMMoreViewController.m */; };
 		FC8B68251E0BD4010027B63F /* XMVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68241E0BD4010027B63F /* XMVideoViewController.m */; };
+		FCAE805D1E10E87D00216676 /* XMHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE805C1E10E87D00216676 /* XMHttpRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		FC86A3751E0D0EF700467072 /* XMRegiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRegiViewController.h; sourceTree = "<group>"; };
 		FC86A3761E0D0EF700467072 /* XMRegiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRegiViewController.m; sourceTree = "<group>"; };
 		FC86A3771E0D0EF700467072 /* XMRegiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMRegiViewController.xib; sourceTree = "<group>"; };
+		FC8B65111E120B970012033D /* XMHttpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHttpOperation.h; sourceTree = "<group>"; };
+		FC8B65121E120B970012033D /* XMHttpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHttpOperation.m; sourceTree = "<group>"; };
 		FC8B67AB1E0BB4730027B63F /* XMLolGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLolGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8B67AF1E0BB4730027B63F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC8B67B81E0BB4730027B63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 		FC8B68211E0BD3F50027B63F /* XMMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMoreViewController.m; sourceTree = "<group>"; };
 		FC8B68231E0BD4010027B63F /* XMVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMVideoViewController.h; sourceTree = "<group>"; };
 		FC8B68241E0BD4010027B63F /* XMVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMVideoViewController.m; sourceTree = "<group>"; };
+		FCAE805B1E10E87D00216676 /* XMHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHttpRequest.h; sourceTree = "<group>"; };
+		FCAE805C1E10E87D00216676 /* XMHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHttpRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +262,10 @@
 				FC8B67F71E0BC4E00027B63F /* UIView+XMframe.h */,
 				FC8B67F81E0BC4E00027B63F /* UIView+XMframe.m */,
 				FC8B67FA1E0BC5110027B63F /* PrefixHeader.pch */,
+				FCAE805B1E10E87D00216676 /* XMHttpRequest.h */,
+				FCAE805C1E10E87D00216676 /* XMHttpRequest.m */,
+				FC8B65111E120B970012033D /* XMHttpOperation.h */,
+				FC8B65121E120B970012033D /* XMHttpOperation.m */,
 			);
 			path = ToolClass;
 			sourceTree = "<group>";
@@ -503,6 +513,7 @@
 				TargetAttributes = {
 					FC8B67AA1E0BB4730027B63F = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6YV3C8U9YN;
 						ProvisioningStyle = Automatic;
 					};
 					FC8B67C31E0BB4730027B63F = {
@@ -623,10 +634,12 @@
 				FC8B68071E0BD14C0027B63F /* XMTabbarController.m in Sources */,
 				FC8B68251E0BD4010027B63F /* XMVideoViewController.m in Sources */,
 				FC8B68041E0BCE870027B63F /* XMMainViewController.m in Sources */,
+				FC8B65131E120B970012033D /* XMHttpOperation.m in Sources */,
 				FC8B67ED1E0BB5D30027B63F /* ViewController.m in Sources */,
 				FC86A3781E0D0EF700467072 /* XMRegiViewController.m in Sources */,
 				FC8B67EC1E0BB5D30027B63F /* AppDelegate.m in Sources */,
 				FC8B67F61E0BC3950027B63F /* XMSideViewController.m in Sources */,
+				FCAE805D1E10E87D00216676 /* XMHttpRequest.m in Sources */,
 				FC8B681F1E0BD3E80027B63F /* XMCommunityViewController.m in Sources */,
 				FC8B68191E0BD3BC0027B63F /* XMMessageViewController.m in Sources */,
 				FC8B68221E0BD3F50027B63F /* XMMoreViewController.m in Sources */,
@@ -784,6 +797,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6YV3C8U9YN;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XMLolGames/ToolClass/PrefixHeader.pch";
 				INFOPLIST_FILE = XMLolGames/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -799,6 +813,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6YV3C8U9YN;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XMLolGames/ToolClass/PrefixHeader.pch";
 				INFOPLIST_FILE = XMLolGames/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

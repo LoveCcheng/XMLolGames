@@ -26,6 +26,18 @@
     XMSideViewController *sideVC = [XMSideViewController SideViewControllerWithLeftController:leftVC andMainController:tababr];
     [self setStatusStyle];
     self.window.rootViewController = sideVC;
+    
+    
+    if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)]) {
+        //>=ios8
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge categories:nil]];
+        [application registerForRemoteNotifications];
+    }
+//    else{
+//        //<ios8
+//        [application registerForRemoteNotificationTypes:UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge];
+//    }
+    
     return YES;
 }
 /** 设置状态栏颜色 */
@@ -33,6 +45,35 @@
     //需要在info.plist文件里面设置 View controller-based status bar appearance    为NO
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
+/** 获取deviceToken */
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(nonnull NSData *)deviceToken{
+    XMLog(@"token - %@",deviceToken);
+}
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    XMLog(@"获取deviceToken失败的原因 - %@",error);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
