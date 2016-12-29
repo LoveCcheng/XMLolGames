@@ -12,6 +12,8 @@
 #import "XMLeftViewController.h"
 #import "XMMainViewController.h"
 #import "XMTabbarController.h"
+#import "XMUserInfo.h"
+#import "XMNavViewController.h"
 
 @interface AppDelegate ()
 
@@ -55,10 +57,42 @@
 
 
 
-
-
-
-
+/** 程序进入后台 */
+-(void)applicationDidEnterBackground:(UIApplication *)application{
+    //进入后台后开始
+    [XMUserInfo shareManager].enterBackgroundTime = [NSDate date];
+    XMLog(@"程序进入后台，开始计时");
+}
+/** 程序进入前台.处于使用状态 */
+-(void)applicationDidBecomeActive:(UIApplication *)application{
+    
+    NSDate *date = [XMUserInfo shareManager].enterBackgroundTime;
+    
+    if (date) {
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        
+        unsigned int timeflags = NSCalendarUnitYear|
+        NSCalendarUnitMonth |
+        NSCalendarUnitDay |
+        NSCalendarUnitHour |
+        NSCalendarUnitMinute |
+        NSCalendarUnitSecond;
+        NSDateComponents *d =[cal components:timeflags fromDate:date toDate:[NSDate date] options:0];
+        
+        //得到进入后台多少时间。。。单位是秒
+        long sec = [d hour]*3600 + [d minute]*60 +[d second];
+        if (sec>=60) {
+            XMLog(@"超过1分钟了,请重新登录");
+            
+            XMMainViewController *mainVC = [[XMMainViewController alloc]init];
+            XMNavViewController *nav = [[XMNavViewController alloc]initWithRootViewController:mainVC];
+            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
+        }
+        
+    }
+    
+    
+}
 
 
 
@@ -80,20 +114,12 @@
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
 }
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {

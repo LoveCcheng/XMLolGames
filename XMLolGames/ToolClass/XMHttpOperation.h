@@ -18,7 +18,9 @@
  * 用户注册
  */
 +(void)RegisterWithUsername:(NSString *)username Password:(NSString *)password;
+/** 用户登录*/
 
++(void)LoginWithUsername:(NSString *)username Password:(NSString *)password;
 
 
 

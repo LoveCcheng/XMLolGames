@@ -31,6 +31,9 @@
 		FC8B681F1E0BD3E80027B63F /* XMCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B681E1E0BD3E80027B63F /* XMCommunityViewController.m */; };
 		FC8B68221E0BD3F50027B63F /* XMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68211E0BD3F50027B63F /* XMMoreViewController.m */; };
 		FC8B68251E0BD4010027B63F /* XMVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B68241E0BD4010027B63F /* XMVideoViewController.m */; };
+		FC9043C31E14A0AE00948652 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9043C21E14A0AE00948652 /* Foundation+Log.m */; };
+		FC9043C61E14AB0D00948652 /* XMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9043C51E14AB0D00948652 /* XMConst.m */; };
+		FC9043C91E14B2E400948652 /* XMUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9043C81E14B2E400948652 /* XMUserInfo.m */; };
 		FCAE805D1E10E87D00216676 /* XMHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE805C1E10E87D00216676 /* XMHttpRequest.m */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +103,11 @@
 		FC8B68211E0BD3F50027B63F /* XMMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMoreViewController.m; sourceTree = "<group>"; };
 		FC8B68231E0BD4010027B63F /* XMVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMVideoViewController.h; sourceTree = "<group>"; };
 		FC8B68241E0BD4010027B63F /* XMVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMVideoViewController.m; sourceTree = "<group>"; };
+		FC9043C21E14A0AE00948652 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		FC9043C41E14AB0D00948652 /* XMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMConst.h; sourceTree = "<group>"; };
+		FC9043C51E14AB0D00948652 /* XMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMConst.m; sourceTree = "<group>"; };
+		FC9043C71E14B2E400948652 /* XMUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMUserInfo.h; sourceTree = "<group>"; };
+		FC9043C81E14B2E400948652 /* XMUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMUserInfo.m; sourceTree = "<group>"; };
 		FCAE805B1E10E87D00216676 /* XMHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHttpRequest.h; sourceTree = "<group>"; };
 		FCAE805C1E10E87D00216676 /* XMHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHttpRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,13 +267,18 @@
 		FC8B67E51E0BB5CD0027B63F /* ToolClass */ = {
 			isa = PBXGroup;
 			children = (
+				FC9043C21E14A0AE00948652 /* Foundation+Log.m */,
 				FC8B67F71E0BC4E00027B63F /* UIView+XMframe.h */,
-				FC8B67F81E0BC4E00027B63F /* UIView+XMframe.m */,
 				FC8B67FA1E0BC5110027B63F /* PrefixHeader.pch */,
+				FC8B67F81E0BC4E00027B63F /* UIView+XMframe.m */,
 				FCAE805B1E10E87D00216676 /* XMHttpRequest.h */,
 				FCAE805C1E10E87D00216676 /* XMHttpRequest.m */,
 				FC8B65111E120B970012033D /* XMHttpOperation.h */,
 				FC8B65121E120B970012033D /* XMHttpOperation.m */,
+				FC9043C41E14AB0D00948652 /* XMConst.h */,
+				FC9043C51E14AB0D00948652 /* XMConst.m */,
+				FC9043C71E14B2E400948652 /* XMUserInfo.h */,
+				FC9043C81E14B2E400948652 /* XMUserInfo.m */,
 			);
 			path = ToolClass;
 			sourceTree = "<group>";
@@ -635,6 +648,7 @@
 				FC8B68251E0BD4010027B63F /* XMVideoViewController.m in Sources */,
 				FC8B68041E0BCE870027B63F /* XMMainViewController.m in Sources */,
 				FC8B65131E120B970012033D /* XMHttpOperation.m in Sources */,
+				FC9043C31E14A0AE00948652 /* Foundation+Log.m in Sources */,
 				FC8B67ED1E0BB5D30027B63F /* ViewController.m in Sources */,
 				FC86A3781E0D0EF700467072 /* XMRegiViewController.m in Sources */,
 				FC8B67EC1E0BB5D30027B63F /* AppDelegate.m in Sources */,
@@ -647,6 +661,8 @@
 				FC86A3721E0CBEB500467072 /* XMNavViewController.m in Sources */,
 				FC8B68011E0BCE7D0027B63F /* XMLeftViewController.m in Sources */,
 				FC8B681C1E0BD3CD0027B63F /* XMHeroViewController.m in Sources */,
+				FC9043C61E14AB0D00948652 /* XMConst.m in Sources */,
+				FC9043C91E14B2E400948652 /* XMUserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

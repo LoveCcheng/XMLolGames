@@ -46,12 +46,18 @@
 /** get请求 */
 -(void)Get:(NSString *)UrlString AndParameter:(NSDictionary *)dict{
     
-    _manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     _manager.responseSerializer.acceptableContentTypes=[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
     [_manager GET:UrlString parameters:dict progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        XMLog(@"%@",responseObject);
+        
+        if ([dict[@"operationCode"] isEqualToString:@"30000"]) {//注册
+            [[NSNotificationCenter defaultCenter] postNotificationName:XMRegisterSuccessNotification object:responseObject];
+        }
+        if ([dict[@"operationCode"] isEqualToString:@"30002"]) {//登录
+            [[NSNotificationCenter defaultCenter] postNotificationName:XMLoginSuccessNotification object:responseObject];
+        }
+//        XMLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         XMLog(@"---%@",error);
     }];
