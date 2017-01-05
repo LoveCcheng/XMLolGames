@@ -22,6 +22,11 @@
 
 +(void)LoginWithUsername:(NSString *)username Password:(NSString *)password;
 
+/** 字典转换成字符串 */
++(NSString *)toJsonString:(NSDictionary *)dict;
+
+/** 显示提示信息 */
++(void)ShowMessage:(NSString *)Message;
 
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "XMHeroViewController.h"
+#import "XMDataStorage.h"
 
 @interface XMHeroViewController ()
 
@@ -17,7 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor=[UIColor whiteColor];
+    self.title=@"佳佳";
+    
 }
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSDictionary *dict = [XMDataStorage readUserandPass];
+    XMLog(@"---%@,",dict);
+
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

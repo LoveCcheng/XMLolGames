@@ -14,6 +14,10 @@
 #import "XMTabbarController.h"
 #import "XMUserInfo.h"
 #import "XMNavViewController.h"
+#import "XMDataStorage.h"
+#import "XMHttpOperation.h"
+#import "XMProgressView.h"
+#import "BBobjectProgress.h"
 
 @interface AppDelegate ()
 
@@ -29,7 +33,7 @@
     [self setStatusStyle];
     self.window.rootViewController = sideVC;
     
-    
+    //推送通知
     if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)]) {
         //>=ios8
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge categories:nil]];
@@ -40,7 +44,30 @@
 //        [application registerForRemoteNotificationTypes:UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge];
 //    }
     
+//    
+//    BBobjectProgress *proview = [BBobjectProgress shareManager];
+//    [proview userImage:@"load_cont_icon"];
+//    [proview userText:@"正在登录中.."];
+//    [proview showView];
+//    
+//    
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSDictionary *dict = [XMDataStorage readUserandPass];
+//        NSString *user = dict[@"username"];
+//        NSString *pass = dict[@"password"];
+//        
+//        [XMHttpOperation LoginWithUsername:user Password:pass];
+//    });
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(successLogin) name:XMLoginSuccessNotification object:nil];
+    
     return YES;
+}
+-(void)successLogin{
+//    UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+//    [alert show];
+//    BBobjectProgress *proview = [BBobjectProgress shareManager];
+//    [proview hideView];
 }
 /** 设置状态栏颜色 */
 -(void)setStatusStyle{

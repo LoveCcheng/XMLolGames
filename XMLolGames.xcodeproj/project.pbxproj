@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E35C02A9B961C7594C1C622 /* libPods-XMLolGames.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */; };
+		FC827AE81E1E19710049B522 /* XMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC827AE71E1E19710049B522 /* XMProgressView.m */; };
+		FC827AEB1E1E1AD70049B522 /* load_cont_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = FC827AEA1E1E1AD70049B522 /* load_cont_icon.gif */; };
+		FC827AEE1E1E25990049B522 /* BBobjectProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = FC827AED1E1E25990049B522 /* BBobjectProgress.m */; };
 		FC86A3721E0CBEB500467072 /* XMNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86A3711E0CBEB500467072 /* XMNavViewController.m */; };
 		FC86A3741E0CCC7E00467072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC86A3731E0CCC7E00467072 /* Assets.xcassets */; };
 		FC86A3781E0D0EF700467072 /* XMRegiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86A3761E0D0EF700467072 /* XMRegiViewController.m */; };
@@ -34,7 +37,9 @@
 		FC9043C31E14A0AE00948652 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9043C21E14A0AE00948652 /* Foundation+Log.m */; };
 		FC9043C61E14AB0D00948652 /* XMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9043C51E14AB0D00948652 /* XMConst.m */; };
 		FC9043C91E14B2E400948652 /* XMUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9043C81E14B2E400948652 /* XMUserInfo.m */; };
+		FC9B65E41E15FCD700098C63 /* XMEnDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9B65E31E15FCD600098C63 /* XMEnDecode.m */; };
 		FCAE805D1E10E87D00216676 /* XMHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE805C1E10E87D00216676 /* XMHttpRequest.m */; };
+		FCB0518D1E1CE795006A1745 /* XMDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB0518C1E1CE795006A1745 /* XMDataStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		0CFFBD17452D4CD3F89CDD37 /* Pods-XMLolGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLolGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames.release.xcconfig"; sourceTree = "<group>"; };
 		1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XMLolGames.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D48D1E3D56BF8D44A4D202B /* Pods-XMLolGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLolGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames.debug.xcconfig"; sourceTree = "<group>"; };
+		FC827AE61E1E19710049B522 /* XMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMProgressView.h; sourceTree = "<group>"; };
+		FC827AE71E1E19710049B522 /* XMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMProgressView.m; sourceTree = "<group>"; };
+		FC827AEA1E1E1AD70049B522 /* load_cont_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load_cont_icon.gif; sourceTree = "<group>"; };
+		FC827AEC1E1E25990049B522 /* BBobjectProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBobjectProgress.h; sourceTree = "<group>"; };
+		FC827AED1E1E25990049B522 /* BBobjectProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBobjectProgress.m; sourceTree = "<group>"; };
 		FC86A3701E0CBEB500467072 /* XMNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNavViewController.h; sourceTree = "<group>"; };
 		FC86A3711E0CBEB500467072 /* XMNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNavViewController.m; sourceTree = "<group>"; };
 		FC86A3731E0CCC7E00467072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,8 +118,12 @@
 		FC9043C51E14AB0D00948652 /* XMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMConst.m; sourceTree = "<group>"; };
 		FC9043C71E14B2E400948652 /* XMUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMUserInfo.h; sourceTree = "<group>"; };
 		FC9043C81E14B2E400948652 /* XMUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMUserInfo.m; sourceTree = "<group>"; };
+		FC9B65E21E15FCD600098C63 /* XMEnDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMEnDecode.h; sourceTree = "<group>"; };
+		FC9B65E31E15FCD600098C63 /* XMEnDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMEnDecode.m; sourceTree = "<group>"; };
 		FCAE805B1E10E87D00216676 /* XMHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHttpRequest.h; sourceTree = "<group>"; };
 		FCAE805C1E10E87D00216676 /* XMHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHttpRequest.m; sourceTree = "<group>"; };
+		FCB0518B1E1CE795006A1745 /* XMDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMDataStorage.h; sourceTree = "<group>"; };
+		FCB0518C1E1CE795006A1745 /* XMDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMDataStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +169,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC827AE91E1E1ACE0049B522 /* sourceImage */ = {
+			isa = PBXGroup;
+			children = (
+				FC827AEA1E1E1AD70049B522 /* load_cont_icon.gif */,
+			);
+			path = sourceImage;
+			sourceTree = "<group>";
+		};
 		FC8B67A21E0BB4730027B63F = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +202,7 @@
 		FC8B67AD1E0BB4730027B63F /* XMLolGames */ = {
 			isa = PBXGroup;
 			children = (
+				FC827AE91E1E1ACE0049B522 /* sourceImage */,
 				FC8B67F01E0BC2FA0027B63F /* TabbarController */,
 				FC8B67E71E0BB5D30027B63F /* Appdelegate */,
 				FC8B67E11E0BB5CD0027B63F /* Community(four) */,
@@ -269,8 +292,8 @@
 			children = (
 				FC9043C21E14A0AE00948652 /* Foundation+Log.m */,
 				FC8B67F71E0BC4E00027B63F /* UIView+XMframe.h */,
-				FC8B67FA1E0BC5110027B63F /* PrefixHeader.pch */,
 				FC8B67F81E0BC4E00027B63F /* UIView+XMframe.m */,
+				FC8B67FA1E0BC5110027B63F /* PrefixHeader.pch */,
 				FCAE805B1E10E87D00216676 /* XMHttpRequest.h */,
 				FCAE805C1E10E87D00216676 /* XMHttpRequest.m */,
 				FC8B65111E120B970012033D /* XMHttpOperation.h */,
@@ -279,6 +302,14 @@
 				FC9043C51E14AB0D00948652 /* XMConst.m */,
 				FC9043C71E14B2E400948652 /* XMUserInfo.h */,
 				FC9043C81E14B2E400948652 /* XMUserInfo.m */,
+				FC9B65E21E15FCD600098C63 /* XMEnDecode.h */,
+				FC9B65E31E15FCD600098C63 /* XMEnDecode.m */,
+				FCB0518B1E1CE795006A1745 /* XMDataStorage.h */,
+				FCB0518C1E1CE795006A1745 /* XMDataStorage.m */,
+				FC827AE61E1E19710049B522 /* XMProgressView.h */,
+				FC827AE71E1E19710049B522 /* XMProgressView.m */,
+				FC827AEC1E1E25990049B522 /* BBobjectProgress.h */,
+				FC827AED1E1E25990049B522 /* BBobjectProgress.m */,
 			);
 			path = ToolClass;
 			sourceTree = "<group>";
@@ -571,6 +602,7 @@
 				FC86A3741E0CCC7E00467072 /* Assets.xcassets in Resources */,
 				FC86A3791E0D0EF700467072 /* XMRegiViewController.xib in Resources */,
 				FC8B67B91E0BB4730027B63F /* Main.storyboard in Resources */,
+				FC827AEB1E1E1AD70049B522 /* load_cont_icon.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +678,7 @@
 				FC8B67F91E0BC4E00027B63F /* UIView+XMframe.m in Sources */,
 				FC8B68071E0BD14C0027B63F /* XMTabbarController.m in Sources */,
 				FC8B68251E0BD4010027B63F /* XMVideoViewController.m in Sources */,
+				FC827AE81E1E19710049B522 /* XMProgressView.m in Sources */,
 				FC8B68041E0BCE870027B63F /* XMMainViewController.m in Sources */,
 				FC8B65131E120B970012033D /* XMHttpOperation.m in Sources */,
 				FC9043C31E14A0AE00948652 /* Foundation+Log.m in Sources */,
@@ -653,7 +686,9 @@
 				FC86A3781E0D0EF700467072 /* XMRegiViewController.m in Sources */,
 				FC8B67EC1E0BB5D30027B63F /* AppDelegate.m in Sources */,
 				FC8B67F61E0BC3950027B63F /* XMSideViewController.m in Sources */,
+				FCB0518D1E1CE795006A1745 /* XMDataStorage.m in Sources */,
 				FCAE805D1E10E87D00216676 /* XMHttpRequest.m in Sources */,
+				FC827AEE1E1E25990049B522 /* BBobjectProgress.m in Sources */,
 				FC8B681F1E0BD3E80027B63F /* XMCommunityViewController.m in Sources */,
 				FC8B68191E0BD3BC0027B63F /* XMMessageViewController.m in Sources */,
 				FC8B68221E0BD3F50027B63F /* XMMoreViewController.m in Sources */,
@@ -663,6 +698,7 @@
 				FC8B681C1E0BD3CD0027B63F /* XMHeroViewController.m in Sources */,
 				FC9043C61E14AB0D00948652 /* XMConst.m in Sources */,
 				FC9043C91E14B2E400948652 /* XMUserInfo.m in Sources */,
+				FC9B65E41E15FCD700098C63 /* XMEnDecode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

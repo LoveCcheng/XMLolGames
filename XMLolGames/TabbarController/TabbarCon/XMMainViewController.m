@@ -9,6 +9,7 @@
 #import "XMMainViewController.h"
 #import "XMRegiViewController.h"
 #import "XMHttpOperation.h"
+#import "XMDataStorage.h"
 
 
 @interface XMMainViewController ()
@@ -32,14 +33,17 @@
 }
 
 -(void)loginSuccess:(NSNotification *)noti{
-    XMLog(@"%@",noti.object);
-    NSString *code = noti.object[@"code"];
-    if ([code isEqualToString:@"200"]) {
-        UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
-        [alert show];
-        
+//    XMLog(@"%@",noti.object);
+    NSString *par = noti.object[@"success"];
+    [XMDataStorage saveInfo:par forkey:@"XMinfo"];
+    
+    [XMHttpOperation ShowMessage:@"登录成功.."];
         [self LeftitemClick];
-    }
+
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
 }
 
 //设置导航栏
@@ -99,8 +103,16 @@
     if (self.username.text.length==0||self.password.text.length==0) {
         UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"message:@"用户名和密码不能为空" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
         [alert show];
+        return;
     }
-
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"username"] = self.username.text;
+    dict[@"password"] = self.password.text;
+    [XMDataStorage saveUserAndPass:dict];
+    
+    
+    
     [XMHttpOperation LoginWithUsername:self.username.text Password:self.password.text];    
 }
 

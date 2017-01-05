@@ -22,7 +22,7 @@
  url : 请求地址
  param:请求参数
  */
--(void)BeginHttpRequestWithUrl:(NSString *)Url andParam:(NSDictionary *)param;
+-(void)BeginHttpRequestWithUrl:(NSString *)Url andParam:(NSString *)param;
 
 
 

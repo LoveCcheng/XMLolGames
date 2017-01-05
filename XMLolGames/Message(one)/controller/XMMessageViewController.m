@@ -7,6 +7,10 @@
 //
 
 #import "XMMessageViewController.h"
+#import "XMHttpOperation.h"
+#import "XMDataStorage.h"
+#import "BBobjectProgress.h"
+#import "XMProgressView.h"
 
 @interface XMMessageViewController ()
 
@@ -19,12 +23,31 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setNavigation];
+    [self autoLogin];
 }
 
+-(void)autoLogin{
+    NSDictionary *dict = [XMDataStorage readUserandPass];
+    NSString *user = dict[@"username"];
+    NSString *pass = dict[@"password"];
+    
+    if (user.length==0 || pass.length==0) {
+        return;
+    }
+    XMProgressView *proview = [XMProgressView shareManager];
+    [proview showProgressView];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+        
+        [XMHttpOperation LoginWithUsername:user Password:pass];
+    });
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(successLogin) name:XMLoginSuccessNotification object:nil];
+}
+
+-(void)successLogin{
+        XMProgressView *proview = [XMProgressView shareManager];
+        [proview hideView];
+        [XMHttpOperation ShowMessage:@"登录成功"];
 }
 //设置导航栏
 -(void)setNavigation{

@@ -7,6 +7,9 @@
 //
 
 #import "XMHttpRequest.h"
+#import "XMEnDecode.h"
+
+#define Endecode @"Endecode"
 
 @interface XMHttpRequest ()
 {
@@ -40,8 +43,18 @@
  url : 请求地址
  param:请求参数
  */
--(void)BeginHttpRequestWithUrl:(NSString *)Url andParam:(NSDictionary *)param{
-    [self Get:Url AndParameter:param];
+-(void)BeginHttpRequestWithUrl:(NSString *)Url andParam:(NSString *)param{
+    NSString *enParam =[XMEnDecode encodebase64:param];
+//    XMLog(@"加密字符串--%@",enParam);
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"param"] = enParam;
+    dict[@"operationCode"] = @"30002";
+    
+//    XMLog(@"---dict = %@",dict);
+    
+    [self Get:Url AndParameter:dict];
+    
 }
 /** get请求 */
 -(void)Get:(NSString *)UrlString AndParameter:(NSDictionary *)dict{
@@ -62,7 +75,6 @@
         XMLog(@"---%@",error);
     }];
 }
-
 
 
 
