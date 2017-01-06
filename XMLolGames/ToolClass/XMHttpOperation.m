@@ -9,8 +9,10 @@
 #import "XMHttpOperation.h"
 #import "XMHttpRequest.h"
 
-#define HTTP_URL_REG @"http://10.10.202.39/project/frame.php"
-#define HTTP_URL_LOGIN @"http://localhost/project/Login.php"
+/** 真机 */
+#define HTTP_REG_Iphone @"http://10.10.202.39/project/frame.php"
+/** 模拟器 */
+#define HTTP_REG_SML @"http://localhost/project/frame.php"
 
 @implementation XMHttpOperation
 
@@ -38,7 +40,7 @@
 //    XMLog(@"%@",ParamDic);
     
     NSString *param = [XMHttpOperation toJsonString:ParamDic];
-    [[XMHttpRequest shareHttpRequest] BeginHttpRequestWithUrl:HTTP_URL_REG andParam:param];
+    [[XMHttpRequest shareHttpRequest] BeginHttpRequestWithUrl:HTTP_REG_SML andParam:param];
 }
 
 

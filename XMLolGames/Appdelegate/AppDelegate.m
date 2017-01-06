@@ -44,31 +44,10 @@
 //        [application registerForRemoteNotificationTypes:UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge];
 //    }
     
-//    
-//    BBobjectProgress *proview = [BBobjectProgress shareManager];
-//    [proview userImage:@"load_cont_icon"];
-//    [proview userText:@"正在登录中.."];
-//    [proview showView];
-//    
-//    
-//    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        NSDictionary *dict = [XMDataStorage readUserandPass];
-//        NSString *user = dict[@"username"];
-//        NSString *pass = dict[@"password"];
-//        
-//        [XMHttpOperation LoginWithUsername:user Password:pass];
-//    });
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(successLogin) name:XMLoginSuccessNotification object:nil];
     
     return YES;
 }
--(void)successLogin{
-//    UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"message:@"登录成功" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
-//    [alert show];
-//    BBobjectProgress *proview = [BBobjectProgress shareManager];
-//    [proview hideView];
-}
+
 /** 设置状态栏颜色 */
 -(void)setStatusStyle{
     //需要在info.plist文件里面设置 View controller-based status bar appearance    为NO
@@ -93,31 +72,35 @@
 /** 程序进入前台.处于使用状态 */
 -(void)applicationDidBecomeActive:(UIApplication *)application{
     
-    NSDate *date = [XMUserInfo shareManager].enterBackgroundTime;
-    
-    if (date) {
-        NSCalendar *cal = [NSCalendar currentCalendar];
-        
-        unsigned int timeflags = NSCalendarUnitYear|
-        NSCalendarUnitMonth |
-        NSCalendarUnitDay |
-        NSCalendarUnitHour |
-        NSCalendarUnitMinute |
-        NSCalendarUnitSecond;
-        NSDateComponents *d =[cal components:timeflags fromDate:date toDate:[NSDate date] options:0];
-        
-        //得到进入后台多少时间。。。单位是秒
-        long sec = [d hour]*3600 + [d minute]*60 +[d second];
-        if (sec>=60) {
-            XMLog(@"超过1分钟了,请重新登录");
+    NSString *isLogin = [XMDataStorage readinfoWithKey:@"XMinfo"];
+    //已经登录了
+    if (isLogin.length!=0) {
+        XMLog(@"已经登录了");
+        NSDate *date = [XMUserInfo shareManager].enterBackgroundTime;
+        if (date) {
+            NSCalendar *cal = [NSCalendar currentCalendar];
             
-            XMMainViewController *mainVC = [[XMMainViewController alloc]init];
-            XMNavViewController *nav = [[XMNavViewController alloc]initWithRootViewController:mainVC];
-            [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
+            unsigned int timeflags = NSCalendarUnitYear|
+            NSCalendarUnitMonth |
+            NSCalendarUnitDay |
+            NSCalendarUnitHour |
+            NSCalendarUnitMinute |
+            NSCalendarUnitSecond;
+            NSDateComponents *d =[cal components:timeflags fromDate:date toDate:[NSDate date] options:0];
+            
+            //得到进入后台多少时间。。。单位是秒
+            long sec = [d hour]*3600 + [d minute]*60 +[d second];
+            if (sec>=10) {
+                XMLog(@"超过1分钟了,请重新登录");
+//                XMMainViewController *mainVC = [[XMMainViewController alloc]init];
+//                XMNavViewController *nav = [[XMNavViewController alloc]initWithRootViewController:mainVC];
+//                [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
+                //发送自动登录的信息
+                [[NSNotificationCenter defaultCenter] postNotificationName:XMautoLoginNotification object:nil];
+                
+            }
         }
-        
     }
-    
     
 }
 

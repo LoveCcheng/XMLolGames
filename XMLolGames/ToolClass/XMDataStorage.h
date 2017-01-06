@@ -26,5 +26,8 @@
 /** 读取用户名和密码 */
 +(NSDictionary *)readUserandPass;
 
+/** 将颜色值转换为图片 */
++(UIImage *)imageWithColor:(UIColor *)color;
+
 
 @end

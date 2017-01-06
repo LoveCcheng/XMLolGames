@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Colours (5.13.0):
+    - Colours/ObjC (= 5.13.0)
+  - Colours/ObjC (5.13.0)
   - GTMBase64 (1.0.0)
   - SDWebImage (4.0.0-beta2):
     - SDWebImage/Core (= 4.0.0-beta2)
@@ -21,14 +24,16 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - Colours (~> 5.13.0)
   - GTMBase64 (~> 1.0.0)
   - SDWebImage (~> 4.0.0-beta2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Colours: f24220c38f13deac88612667e9b4a7fb96b871d4
   GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
   SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
 
-PODFILE CHECKSUM: 076aa382776c24d3c70c4254c0303d088f28c29e
+PODFILE CHECKSUM: 73ee448e964602a411ec300ce2344352f4050134
 
 COCOAPODS: 1.1.1

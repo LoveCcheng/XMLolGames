@@ -33,8 +33,9 @@
 }
 
 -(void)loginSuccess:(NSNotification *)noti{
-//    XMLog(@"%@",noti.object);
-    NSString *par = noti.object[@"success"];
+    XMLog(@"%@",noti.object);
+    NSString *par = noti.object[@"suceess"];
+    XMLog(@"%@",par);
     [XMDataStorage saveInfo:par forkey:@"XMinfo"];
     
     [XMHttpOperation ShowMessage:@"登录成功.."];

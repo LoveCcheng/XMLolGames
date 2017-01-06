@@ -11,6 +11,7 @@
 
 #import "UIView+XMframe.h"
 #import "XMConst.h"
+#import <Colours.h>
 
 /** 屏幕宽度 */
 #define XMScreenW [UIScreen mainScreen].bounds.size.width

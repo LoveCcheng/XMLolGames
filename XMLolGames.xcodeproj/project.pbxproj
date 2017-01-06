@@ -15,6 +15,8 @@
 		FC86A3741E0CCC7E00467072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC86A3731E0CCC7E00467072 /* Assets.xcassets */; };
 		FC86A3781E0D0EF700467072 /* XMRegiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86A3761E0D0EF700467072 /* XMRegiViewController.m */; };
 		FC86A3791E0D0EF700467072 /* XMRegiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC86A3771E0D0EF700467072 /* XMRegiViewController.xib */; };
+		FC8AEEDA1E1F768A006A38AF /* XMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8AEED91E1F768A006A38AF /* XMNewsViewController.m */; };
+		FC8AEEDD1E1F9878006A38AF /* XMplayPicView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8AEEDC1E1F9878006A38AF /* XMplayPicView.m */; };
 		FC8B65131E120B970012033D /* XMHttpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B65121E120B970012033D /* XMHttpOperation.m */; };
 		FC8B67B01E0BB4730027B63F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B67AF1E0BB4730027B63F /* main.m */; };
 		FC8B67B91E0BB4730027B63F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8B67B71E0BB4730027B63F /* Main.storyboard */; };
@@ -74,6 +76,10 @@
 		FC86A3751E0D0EF700467072 /* XMRegiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRegiViewController.h; sourceTree = "<group>"; };
 		FC86A3761E0D0EF700467072 /* XMRegiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRegiViewController.m; sourceTree = "<group>"; };
 		FC86A3771E0D0EF700467072 /* XMRegiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMRegiViewController.xib; sourceTree = "<group>"; };
+		FC8AEED81E1F768A006A38AF /* XMNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNewsViewController.h; sourceTree = "<group>"; };
+		FC8AEED91E1F768A006A38AF /* XMNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNewsViewController.m; sourceTree = "<group>"; };
+		FC8AEEDB1E1F9878006A38AF /* XMplayPicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMplayPicView.h; sourceTree = "<group>"; };
+		FC8AEEDC1E1F9878006A38AF /* XMplayPicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMplayPicView.m; sourceTree = "<group>"; };
 		FC8B65111E120B970012033D /* XMHttpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHttpOperation.h; sourceTree = "<group>"; };
 		FC8B65121E120B970012033D /* XMHttpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHttpOperation.m; sourceTree = "<group>"; };
 		FC8B67AB1E0BB4730027B63F /* XMLolGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLolGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,7 +258,6 @@
 			children = (
 				FC8B68111E0BD3840027B63F /* controller */,
 				FC8B68121E0BD3840027B63F /* Model */,
-				FC8B68131E0BD3840027B63F /* View */,
 			);
 			path = "Community(four)";
 			sourceTree = "<group>";
@@ -376,6 +381,8 @@
 			children = (
 				FC8B68171E0BD3BC0027B63F /* XMMessageViewController.h */,
 				FC8B68181E0BD3BC0027B63F /* XMMessageViewController.m */,
+				FC8AEED81E1F768A006A38AF /* XMNewsViewController.h */,
+				FC8AEED91E1F768A006A38AF /* XMNewsViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -390,6 +397,8 @@
 		FC8B680A1E0BD3670027B63F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC8AEEDB1E1F9878006A38AF /* XMplayPicView.h */,
+				FC8AEEDC1E1F9878006A38AF /* XMplayPicView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -454,13 +463,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		FC8B68131E0BD3840027B63F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		FC8B68141E0BD38B0027B63F /* controller */ = {
@@ -687,11 +689,13 @@
 				FC8B67EC1E0BB5D30027B63F /* AppDelegate.m in Sources */,
 				FC8B67F61E0BC3950027B63F /* XMSideViewController.m in Sources */,
 				FCB0518D1E1CE795006A1745 /* XMDataStorage.m in Sources */,
+				FC8AEEDD1E1F9878006A38AF /* XMplayPicView.m in Sources */,
 				FCAE805D1E10E87D00216676 /* XMHttpRequest.m in Sources */,
 				FC827AEE1E1E25990049B522 /* BBobjectProgress.m in Sources */,
 				FC8B681F1E0BD3E80027B63F /* XMCommunityViewController.m in Sources */,
 				FC8B68191E0BD3BC0027B63F /* XMMessageViewController.m in Sources */,
 				FC8B68221E0BD3F50027B63F /* XMMoreViewController.m in Sources */,
+				FC8AEEDA1E1F768A006A38AF /* XMNewsViewController.m in Sources */,
 				FC8B67B01E0BB4730027B63F /* main.m in Sources */,
 				FC86A3721E0CBEB500467072 /* XMNavViewController.m in Sources */,
 				FC8B68011E0BCE7D0027B63F /* XMLeftViewController.m in Sources */,

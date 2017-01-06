@@ -5,3 +5,7 @@ NSString *XMRegisterSuccessNotification=@"XMRegisterSuccessNotification";
 
 /** 用户登录成功的通知 */
 NSString *XMLoginSuccessNotification=@"XMLoginSuccessNotification";
+
+
+/** 用户需要自动登录 */
+NSString *XMautoLoginNotification = @"XMautoLoginNotification";
