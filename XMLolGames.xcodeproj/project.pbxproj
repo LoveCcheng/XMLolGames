@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2E35C02A9B961C7594C1C622 /* libPods-XMLolGames.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */; };
+		FC30A8091E25C0D100AF0098 /* XMCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC30A8081E25C0D100AF0098 /* XMCycleView.m */; };
+		FC30A80C1E25C76700AF0098 /* XMcycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC30A80B1E25C76700AF0098 /* XMcycleCell.m */; };
+		FC3BE3DB1E262EB100A4CBC9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC3BE3D71E262EB100A4CBC9 /* 1.jpg */; };
+		FC3BE3DC1E262EB100A4CBC9 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC3BE3D81E262EB100A4CBC9 /* 2.jpg */; };
+		FC3BE3DD1E262EB100A4CBC9 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC3BE3D91E262EB100A4CBC9 /* 3.jpg */; };
+		FC3BE3DE1E262EB100A4CBC9 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC3BE3DA1E262EB100A4CBC9 /* 4.jpg */; };
 		FC827AE81E1E19710049B522 /* XMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC827AE71E1E19710049B522 /* XMProgressView.m */; };
 		FC827AEB1E1E1AD70049B522 /* load_cont_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = FC827AEA1E1E1AD70049B522 /* load_cont_icon.gif */; };
 		FC827AEE1E1E25990049B522 /* BBobjectProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = FC827AED1E1E25990049B522 /* BBobjectProgress.m */; };
@@ -65,6 +71,14 @@
 		0CFFBD17452D4CD3F89CDD37 /* Pods-XMLolGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLolGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames.release.xcconfig"; sourceTree = "<group>"; };
 		1D415A8D6310F0E7E78FA13A /* libPods-XMLolGames.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XMLolGames.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D48D1E3D56BF8D44A4D202B /* Pods-XMLolGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLolGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMLolGames/Pods-XMLolGames.debug.xcconfig"; sourceTree = "<group>"; };
+		FC30A8071E25C0D100AF0098 /* XMCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCycleView.h; sourceTree = "<group>"; };
+		FC30A8081E25C0D100AF0098 /* XMCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCycleView.m; sourceTree = "<group>"; };
+		FC30A80A1E25C76700AF0098 /* XMcycleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMcycleCell.h; sourceTree = "<group>"; };
+		FC30A80B1E25C76700AF0098 /* XMcycleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMcycleCell.m; sourceTree = "<group>"; };
+		FC3BE3D71E262EB100A4CBC9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		FC3BE3D81E262EB100A4CBC9 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		FC3BE3D91E262EB100A4CBC9 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		FC3BE3DA1E262EB100A4CBC9 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		FC827AE61E1E19710049B522 /* XMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMProgressView.h; sourceTree = "<group>"; };
 		FC827AE71E1E19710049B522 /* XMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMProgressView.m; sourceTree = "<group>"; };
 		FC827AEA1E1E1AD70049B522 /* load_cont_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load_cont_icon.gif; sourceTree = "<group>"; };
@@ -178,6 +192,10 @@
 		FC827AE91E1E1ACE0049B522 /* sourceImage */ = {
 			isa = PBXGroup;
 			children = (
+				FC3BE3D71E262EB100A4CBC9 /* 1.jpg */,
+				FC3BE3D81E262EB100A4CBC9 /* 2.jpg */,
+				FC3BE3D91E262EB100A4CBC9 /* 3.jpg */,
+				FC3BE3DA1E262EB100A4CBC9 /* 4.jpg */,
 				FC827AEA1E1E1AD70049B522 /* load_cont_icon.gif */,
 			);
 			path = sourceImage;
@@ -399,6 +417,10 @@
 			children = (
 				FC8AEEDB1E1F9878006A38AF /* XMplayPicView.h */,
 				FC8AEEDC1E1F9878006A38AF /* XMplayPicView.m */,
+				FC30A8071E25C0D100AF0098 /* XMCycleView.h */,
+				FC30A8081E25C0D100AF0098 /* XMCycleView.m */,
+				FC30A80A1E25C76700AF0098 /* XMcycleCell.h */,
+				FC30A80B1E25C76700AF0098 /* XMcycleCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -599,12 +621,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3BE3DD1E262EB100A4CBC9 /* 3.jpg in Resources */,
 				FC8B67BE1E0BB4730027B63F /* LaunchScreen.storyboard in Resources */,
 				FC8B67EF1E0BBA940027B63F /* Images.xcassets in Resources */,
 				FC86A3741E0CCC7E00467072 /* Assets.xcassets in Resources */,
 				FC86A3791E0D0EF700467072 /* XMRegiViewController.xib in Resources */,
 				FC8B67B91E0BB4730027B63F /* Main.storyboard in Resources */,
 				FC827AEB1E1E1AD70049B522 /* load_cont_icon.gif in Resources */,
+				FC3BE3DC1E262EB100A4CBC9 /* 2.jpg in Resources */,
+				FC3BE3DE1E262EB100A4CBC9 /* 4.jpg in Resources */,
+				FC3BE3DB1E262EB100A4CBC9 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,6 +703,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC30A8091E25C0D100AF0098 /* XMCycleView.m in Sources */,
+				FC30A80C1E25C76700AF0098 /* XMcycleCell.m in Sources */,
 				FC8B67F91E0BC4E00027B63F /* UIView+XMframe.m in Sources */,
 				FC8B68071E0BD14C0027B63F /* XMTabbarController.m in Sources */,
 				FC8B68251E0BD4010027B63F /* XMVideoViewController.m in Sources */,
