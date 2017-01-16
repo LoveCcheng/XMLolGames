@@ -28,5 +28,8 @@
 /** 显示提示信息 */
 +(void)ShowMessage:(NSString *)Message;
 
+/** 获取数据 */
++(void)getNewsFormServce:(XMmessageType)type;
+
 
 @end

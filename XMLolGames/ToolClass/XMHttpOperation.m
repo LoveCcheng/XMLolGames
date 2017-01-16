@@ -14,6 +14,14 @@
 /** 模拟器 */
 #define HTTP_REG_SML @"http://localhost/project/frame.php"
 
+#define NEWS_URL @"http://lol.zhangyoubao.com/apis/rest/ItemsService/lists?cattype=news&catid=10178&page=1&i_=puZOEyrLAT4p6n1yAlpL6mvWZSMe0PoZMVYKajNHupzauzHqJn%2BuC7oDAdcHI%2B2PcuK/ZFGdhZpon%2BTMtHfUXw==&t_=1482377243&p_=24074&v_=40090205&d_=ios&osv_=9.2.1&version=0&a_=lol&api=ItemsService.lists&game=lol&time=1482377243&secretVersion=v1.0&secretId=AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA&nonce=766673&secretSignature=zhO%2B05yTe0vqXbZTxaXivBmnf7A="
+
+#define PLAY_URL @"http://lol.zhangyoubao.com/apis/rest/ItemsService/lists?cattype=news&catid=10179&page=1&i_=puZOEyrLAT4p6n1yAlpL6mvWZSMe0PoZMVYKajNHupzauzHqJn%2BuC7oDAdcHI%2B2PcuK/ZFGdhZpon%2BTMtHfUXw==&t_=1482388730&p_=28535&v_=40090205&d_=ios&osv_=9.2.1&version=0&a_=lol&api=ItemsService.lists&game=lol&time=1482388731&secretVersion=v1.0&secretId=AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA&nonce=821674&secretSignature=j8HRF/nUsJ3fd6yHdsm1Z%2B77kvg="
+
+#define GAME_URL @"http://lol.zhangyoubao.com/apis/rest/ItemsService/lists?cattype=news&catid=10006&page=1&i_=puZOEyrLAT4p6n1yAlpL6mvWZSMe0PoZMVYKajNHupzauzHqJn%2BuC7oDAdcHI%2B2PcuK/ZFGdhZpon%2BTMtHfUXw==&t_=1482388729&p_=28532&v_=40090205&d_=ios&osv_=9.2.1&version=0&a_=lol&api=ItemsService.lists&game=lol&time=1482388730&secretVersion=v1.0&secretId=AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA&nonce=810637&secretSignature=yx%2BFmk7/loWgF/JU/IsqW%2B0Gv1s="
+
+#define Mian_URL @"http://lol.zhangyoubao.com/apis/rest/ItemsService/lists?cattype=news&catid=10000&page=1&i_=puZOEyrLAT4p6n1yAlpL6mvWZSMe0PoZMVYKajNHupzauzHqJn%2BuC7oDAdcHI%2B2PcuK/ZFGdhZpon%2BTMtHfUXw==&t_=1482388729&p_=28532&v_=40090205&d_=ios&osv_=9.2.1&version=0&a_=lol&api=ItemsService.lists&game=lol&time=1482388730&secretVersion=v1.0&secretId=AKIDz8krbsJ5yKBZQpn74WFkmLPx3gnPhESA&nonce=722772&secretSignature=BpPvtTfRSBfJW2BGy5WSIja7ngg="
+
 @implementation XMHttpOperation
 
 
@@ -85,14 +93,19 @@
         [showView removeFromSuperview];
     }];
 
-
-
-
 }
 
-
-
-
++(void)getNewsFormServce:(XMmessageType)type{
+    if (type == XMmessageTypeNewest) {
+        [[XMHttpRequest shareHttpRequest] getDataWith:NEWS_URL];
+    }else if (type == XMmessageTypePlay){
+        [[XMHttpRequest shareHttpRequest] getDataWith:PLAY_URL];
+    }else if (type == XMmessageTypeGame){
+        [[XMHttpRequest shareHttpRequest] getDataWith:GAME_URL];
+    }else{
+        [[XMHttpRequest shareHttpRequest] getDataWith:Mian_URL];
+    }
+}
 
 
 

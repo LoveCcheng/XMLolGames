@@ -7,21 +7,52 @@
 //
 
 #import "XMCommunityViewController.h"
+#import "XMCommuntyCell.h"
+#import "XMComuntyModel.h"
 
 
 @interface XMCommunityViewController ()
+
+@property (nonatomic,strong) NSMutableArray *dataArray;
 
 @end
 
 @implementation XMCommunityViewController
 
+-(NSMutableArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [[NSMutableArray alloc]init];
+    }
+    return _dataArray;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
     
     [self setNavigation];
+    
+    [self setTableviewPro];
+    
+    [self getDataFormPlist];
+}
+/** 设置tableview */
+-(void)setTableviewPro{
+    [self.tableView registerClass:[XMCommuntyCell class] forCellReuseIdentifier:@"XMCommuntyCell"];
 
+}
+/** 从plist文件获取数据 */
+-(void)getDataFormPlist{
+    NSString *plistpath = [[NSBundle mainBundle] pathForResource:@"founddata" ofType:@"plist"];
+    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc]initWithContentsOfFile:plistpath];
+    NSArray *arr = dict[@"info"];
+    
+    for (int i=0; i<arr.count; i++) {
+        XMComuntyModel *model = [XMComuntyModel initwithDictionary:arr[i]];
+        [self.dataArray addObject:model];
+    }
+    [self.tableView reloadData];
 }
 
 //设置导航栏
@@ -30,13 +61,20 @@
     //字体大小和颜色
     self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]};
     //左边的按钮
-    UIBarButtonItem *item = [self barButtonWithImage:[UIImage imageNamed:@"leftUserBTN"] HightImage:[UIImage imageNamed:@"leftUserBTN"] target:self action:@selector(itemClick) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [self barButtonWithImage:[UIImage imageNamed:@"leftUserBTN"] HightImage:[UIImage imageNamed:@"leftUserBTN"] target:self action:@selector(itemClickLeft) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = item;
-}
--(void)itemClick{
-    XMLogFun;
+    UIBarButtonItem *itemRight = [self barButtonWithImage:[UIImage imageNamed:@"photoha"] HightImage:[UIImage imageNamed:@"photoha"] target:self action:@selector(itemClickRight) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = itemRight;
     
 }
+-(void)itemClickLeft{
+    XMLogFun;
+}
+
+-(void)itemClickRight{
+    XMLogFun;
+}
+
 /** 设置导航栏按钮 */
 -(UIBarButtonItem *)barButtonWithImage:(UIImage *)image  HightImage:(UIImage *)hightImage target:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents{
     UIButton *but=[UIButton buttonWithType:UIButtonTypeCustom];
@@ -50,19 +88,69 @@
     return item;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
 }
-*/
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    XMCommuntyCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XMCommuntyCell" forIndexPath:indexPath];
+    
+    XMComuntyModel *model = self.dataArray[indexPath.row];
+    
+    cell.comModel = model;
+    
+    
+    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    XMComuntyModel *model = self.dataArray[indexPath.row];
+    
+    return model.CellHeight;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

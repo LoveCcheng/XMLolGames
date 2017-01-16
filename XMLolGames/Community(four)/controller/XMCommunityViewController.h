@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XMCommunityViewController : UIViewController
+@interface XMCommunityViewController : UITableViewController
 
 @end

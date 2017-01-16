@@ -25,7 +25,7 @@
 -(void)BeginHttpRequestWithUrl:(NSString *)Url andParam:(NSString *)param;
 
 
-
+-(void)getDataWith:(NSString *)url;
 
 
 @end

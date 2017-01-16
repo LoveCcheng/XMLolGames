@@ -20,10 +20,10 @@
 /** 初始化 */
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
-   // if (self) {
+    if (self) {
         self.backgroundColor = [UIColor redColor];
         [self setupCollectionView];
-    //}
+    }
     return self;
 }
 
@@ -40,7 +40,6 @@
 
 /**
  加载本地图片
- 
  @param frame 图片轮播器frame
  @param imageArray 本地图片数组(数组里元素为imageView)
  @param PlaceholderImage 占位图
@@ -79,7 +78,7 @@
     [self addSubview:collection];
     self.collectionView = collection;
     
-    self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0, 70, 100, 30)];
+    self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0, 120, 100, 30)];
     self.pageControl.centerX = self.centerX;
     self.pageControl.pageIndicatorTintColor = [UIColor orangeColor];
     self.pageControl.currentPageIndicatorTintColor = [UIColor greenColor];
@@ -139,7 +138,7 @@
 -(void)addTimer{
     self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(AutochangeView) userInfo:nil repeats:YES];
     
-    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 /** 删除定时器 */
 -(void)deleteTimer{
@@ -149,7 +148,6 @@
 
 /** 定时器事件 */
 -(void)AutochangeView{
-//    NSLog(@"before--%ld",self.index);
     
     self.index ++;
     if (self.imageArray.count == 0) {
@@ -187,7 +185,6 @@
     }
 
 }
-
 
 
 #pragma mark - UIScrollViewDelegate

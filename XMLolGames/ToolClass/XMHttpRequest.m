@@ -56,6 +56,12 @@
     [self Get:Url AndParameter:dict];
     
 }
+
+-(void)getDataWith:(NSString *)url{
+    [self Get:url AndParameter:nil];
+}
+
+
 /** get请求 */
 -(void)Get:(NSString *)UrlString AndParameter:(NSDictionary *)dict{
     
@@ -66,11 +72,12 @@
         
         if ([dict[@"operationCode"] isEqualToString:@"30000"]) {//注册
             [[NSNotificationCenter defaultCenter] postNotificationName:XMRegisterSuccessNotification object:responseObject];
-        }
-        if ([dict[@"operationCode"] isEqualToString:@"30002"]) {//登录
+        }else if ([dict[@"operationCode"] isEqualToString:@"30002"]) {//登录
             [[NSNotificationCenter defaultCenter] postNotificationName:XMLoginSuccessNotification object:responseObject];
+        }else{
+            [[NSNotificationCenter defaultCenter] postNotificationName:XMNewsNotification object:responseObject];
+//            XMLog(@"----%@",responseObject);
         }
-//        XMLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         XMLog(@"---%@",error);
     }];

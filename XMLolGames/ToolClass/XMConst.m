@@ -9,3 +9,7 @@ NSString *XMLoginSuccessNotification=@"XMLoginSuccessNotification";
 
 /** 用户需要自动登录 */
 NSString *XMautoLoginNotification = @"XMautoLoginNotification";
+
+
+/** 用户获取数据成功 */
+NSString *XMNewsNotification = @"XMNewsNotification";

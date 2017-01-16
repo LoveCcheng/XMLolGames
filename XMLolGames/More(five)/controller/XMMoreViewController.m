@@ -7,6 +7,7 @@
 //
 
 #import "XMMoreViewController.h"
+#import "XMSquarButton.h"
 
 @interface XMMoreViewController ()
 
@@ -18,7 +19,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
+    [self automaticallyAdjustsScrollViewInsets];
     [self setNavigation];
+    [self createbutton];
+}
+
+-(void)createbutton{
+    NSArray *arrStr = @[@"张三",@"李四",@"王五",@"猪六",@"王二麻子",@"张三",@"李四",@"王五",@"猪六",@"王二麻子",@"张三",@"李四",@"王五",@"猪六",@"王二麻子",@"张三",@"李四",@"王五",@"猪六",@"王二麻子",@"张三",@"李四",@"王五"];
+    //一行最多5个
+    int maxcols = 5;
+    
+    CGFloat buttonW = XMScreenW/maxcols;
+    CGFloat buttonH = buttonW;
+    
+    for (int i= 0; i<arrStr.count; i++) {
+        XMSquarButton *button = [[XMSquarButton alloc]init];
+        button.titleButton = arrStr[i];
+        [self.view addSubview:button];
+        
+        
+        int col = i%maxcols;//列号
+        int row = i/maxcols;//行号
+        
+        button.X = col*buttonW;
+        button.Y = row*buttonH;
+        button.height = buttonH;
+        button.width = buttonW;
+    }
 }
 
 //设置导航栏
@@ -32,7 +59,6 @@
 }
 -(void)itemClick{
     XMLogFun;
-    
 }
 /** 设置导航栏按钮 */
 -(UIBarButtonItem *)barButtonWithImage:(UIImage *)image  HightImage:(UIImage *)hightImage target:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents{
@@ -47,19 +73,37 @@
     return item;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

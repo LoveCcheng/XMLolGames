@@ -21,7 +21,8 @@ UIKIT_EXTERN NSString *XMLoginSuccessNotification;
 
 /** 用户需要自动登录 */
 UIKIT_EXTERN NSString *XMautoLoginNotification;
-
+/** 用户获取数据成功 */
+UIKIT_EXTERN NSString *XMNewsNotification;
 
 
 
